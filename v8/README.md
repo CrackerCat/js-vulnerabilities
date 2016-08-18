@@ -1,8 +1,18 @@
 # V8
 
+* CVE-2013-2838: OOB read by Christian Holler
 * CVE-2013-6632: TypedArray, Integer Overflow, OOB by Pinkie Pie
+* CVE-2013-6638: BOF by Jakob Kummerrow, fixed in v8 version 3.22.24.7
+* CVE-2013-6639: OOB write by Jakob Kummerow, fixed in v8 version 3.22.24.7
+* CVE-2013-6640: OOB read by Jakob Kummerow, fixed in v8 version 3.22.24.7
+* CVE-2013-6650: Memorry corruption by Christian Holler
 * CVE-2014-1705: TypedArray, Invalid Array length, OOB by geohot
+* CVE-2014-1721: Memory corruption, Chrisstian Holler
+* CVE-2014-1729: fixed in v8 version 3.24.35.22
+* CVE-2014-1749: Integer underflow, fixed in v8 version 3.25.28.16
+* CVE-2014-3167: Unknown type of crash
 * CVE-2014-3176: Array concat, Side effect, OOB by lokihardt
+* CVE-2014-3200: V8 slow/fast properties confusion
 * CVE-2014-7927: asm.js, Compiler, OOB by Christian Holler
 * CVE-2014-7928: Array, Optimization by Christian Holler
 * CVE-2015-1242: Type confusion by fcole@onshape.com
