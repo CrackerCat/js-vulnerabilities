@@ -1,4 +1,4 @@
-# Spidermonkey
+# Spidermonkey - Langfuzz, Security Related Bugs
 
 * Bug 610223: RegExp, Arbitrary memory reading
 * Bug 612837: Integer overflow, Array.unshift
