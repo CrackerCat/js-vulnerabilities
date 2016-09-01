@@ -35,4 +35,8 @@
   * gyp problem with svn, git clone https://github.com/svn2github/gyp build/gyp
   * gmock problem with svn, git clone https://github.com/google/googlemock testing/gtest
 * make
+  * -j n
+  * werror=no
+  * asan=on
+  * ...
 
