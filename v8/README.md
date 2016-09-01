@@ -25,3 +25,14 @@
 * CVE-2016-1669: BOF by Choongwoo Han
 * CVE-2016-1677: Type confusion by Guang Cong of Qihoo
 * CVE-2016-1688: OOB by Max Korenko
+
+# How to build old version v8.
+* Install depot\_tools: http://dev.chromium.org/developers/how-tos/install-depot-tools
+* Fetch v8
+* Find appropriate v8 version using chromium version: http://omahaproxy.appspot.com/
+* git checkout <tagname>
+* gclient sync --with\_branch\_heads --jobs 'n'
+  * gyp problem with svn, git clone https://github.com/svn2github/gyp build/gyp
+  * gmock problem with svn, git clone https://github.com/google/googlemock target\_dir
+* make
+
