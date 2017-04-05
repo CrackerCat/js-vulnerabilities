@@ -1,5 +1,10 @@
-# V8
-
+* CVE-2011-2875: Type Confusion, Object sealing, Christian Holler[Langfuzz]
+* CVE-2011-3057: Invalid read, Christian Holler[Langfuzz]
+* CVE-2011-3092: Invalid write, regex, Christian Holler[Langfuzz]
+* CVE-2011-3103: GC, Brett Wilson[Chrome development community]
+* CVE-2011-3111: Invalid read, SMI, Christian Holler[Langfuzz]
+* CVE-2011-3115: Type corruption, GC, Christain Holler[Langfuzz]
+* CVE-2011-3886: OOB write, Christian Holler[Langfuzz]
 * CVE-2013-6632: TypedArray, Integer Overflow, OOB by Pinkie Pie
 * CVE-2013-6638: BOF by Jakob Kummerrow, fixed in v8 version 3.22.24.7
 * CVE-2013-6640: OOB read by Jakob Kummerow, fixed in v8 version 3.22.24.7
@@ -16,17 +21,3 @@
 * CVE-2016-1669: BOF by Choongwoo Han
 * CVE-2016-1677: Type confusion by Guang Cong of Qihoo
 * CVE-2016-1688: OOB by Max Korenko
-
-# How to build old version v8
-* Install depot\_tools: http://dev.chromium.org/developers/how-tos/install-depot-tools
-* Fetch v8
-* Find appropriate v8 version and get tagname or hashval
-* git checkout [tagname | hashval]
-* gclient sync --with\_branch\_heads --jobs 'n'
-  * gyp problem with svn, git clone https://github.com/svn2github/gyp build/gyp
-* make
-  * -j n
-  * werror=no
-  * asan=on
-  * ...
-
